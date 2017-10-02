@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8402AF421F7D83E1008DA83F /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402AF411F7D83E1008DA83F /* CreateAccountVC.swift */; };
 		844ED6F81F81624300748E3E /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844ED6F71F81624300748E3E /* UserDataService.swift */; };
+		844ED6FA1F816B4400748E3E /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844ED6F91F816B4400748E3E /* AvatarPickerVC.swift */; };
+		844ED6FC1F816CE900748E3E /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844ED6FB1F816CE900748E3E /* AvatarCell.swift */; };
 		8481DBE91F7BEFEF00CDD48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481DBE81F7BEFEF00CDD48D /* AppDelegate.swift */; };
 		8481DBEE1F7BEFEF00CDD48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481DBEC1F7BEFEF00CDD48D /* Main.storyboard */; };
 		8481DBF01F7BEFEF00CDD48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8481DBEF1F7BEFEF00CDD48D /* Assets.xcassets */; };
@@ -21,6 +23,9 @@
 		849AF9D01F7D49B8000DB184 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AF9CF1F7D49B8000DB184 /* LoginVC.swift */; };
 		849FA6B21F80120200E7E580 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FA6B11F80120200E7E580 /* AuthService.swift */; };
 		849FA6B41F801C4800E7E580 /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FA6B31F801C4800E7E580 /* RoundedBtn.swift */; };
+		84B417B61F824AC800CBF76D /* CircleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B417B51F824AC800CBF76D /* CircleImg.swift */; };
+		84B417B91F82583D00CBF76D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B417B71F82583D00CBF76D /* ProfileVC.swift */; };
+		84B417BA1F82583D00CBF76D /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B417B81F82583D00CBF76D /* ProfileVC.xib */; };
 		E17E0C31D449FA7B195D2B2B /* Pods_chat_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9DDA4DC8B5FBB144D47FD2 /* Pods_chat_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,8 @@
 		6677AE1340FC3C90497FCDD2 /* Pods-chat-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat-app/Pods-chat-app.release.xcconfig"; sourceTree = "<group>"; };
 		8402AF411F7D83E1008DA83F /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		844ED6F71F81624300748E3E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		844ED6F91F816B4400748E3E /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		844ED6FB1F816CE900748E3E /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		8481DBE51F7BEFEF00CDD48D /* chat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8481DBE81F7BEFEF00CDD48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8481DBED1F7BEFEF00CDD48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +53,9 @@
 		849AF9CF1F7D49B8000DB184 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		849FA6B11F80120200E7E580 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		849FA6B31F801C4800E7E580 /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		84B417B51F824AC800CBF76D /* CircleImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImg.swift; sourceTree = "<group>"; };
+		84B417B71F82583D00CBF76D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		84B417B81F82583D00CBF76D /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 		8481DBE71F7BEFEF00CDD48D /* chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				84B417BB1F82585A00CBF76D /* XIBs */,
 				849FA6B01F8011E700E7E580 /* Services */,
 				849AF9CB1F7D44A3000DB184 /* Utilities */,
 				849AF9C01F7D35E7000DB184 /* Supporting Files */,
@@ -120,6 +131,8 @@
 				849AF9C61F7D38CA000DB184 /* ChannelVC.swift */,
 				849AF9CF1F7D49B8000DB184 /* LoginVC.swift */,
 				8402AF411F7D83E1008DA83F /* CreateAccountVC.swift */,
+				844ED6F91F816B4400748E3E /* AvatarPickerVC.swift */,
+				84B417B71F82583D00CBF76D /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +142,8 @@
 			children = (
 				849AF9C91F7D3CE4000DB184 /* GradientView.swift */,
 				849FA6B31F801C4800E7E580 /* RoundedBtn.swift */,
+				844ED6FB1F816CE900748E3E /* AvatarCell.swift */,
+				84B417B51F824AC800CBF76D /* CircleImg.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +180,14 @@
 				844ED6F71F81624300748E3E /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		84B417BB1F82585A00CBF76D /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				84B417B81F82583D00CBF76D /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B417BA1F82583D00CBF76D /* ProfileVC.xib in Resources */,
 				8481DBF31F7BEFEF00CDD48D /* LaunchScreen.storyboard in Resources */,
 				8481DBF01F7BEFEF00CDD48D /* Assets.xcassets in Resources */,
 				8481DBEE1F7BEFEF00CDD48D /* Main.storyboard in Resources */,
@@ -291,14 +315,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B417B91F82583D00CBF76D /* ProfileVC.swift in Sources */,
 				849AF9C51F7D38B6000DB184 /* ChatVC.swift in Sources */,
+				844ED6FA1F816B4400748E3E /* AvatarPickerVC.swift in Sources */,
 				849AF9C71F7D38CA000DB184 /* ChannelVC.swift in Sources */,
 				849FA6B41F801C4800E7E580 /* RoundedBtn.swift in Sources */,
 				844ED6F81F81624300748E3E /* UserDataService.swift in Sources */,
+				84B417B61F824AC800CBF76D /* CircleImg.swift in Sources */,
 				8402AF421F7D83E1008DA83F /* CreateAccountVC.swift in Sources */,
 				849FA6B21F80120200E7E580 /* AuthService.swift in Sources */,
 				849AF9D01F7D49B8000DB184 /* LoginVC.swift in Sources */,
 				849AF9CA1F7D3CE4000DB184 /* GradientView.swift in Sources */,
+				844ED6FC1F816CE900748E3E /* AvatarCell.swift in Sources */,
 				8481DBE91F7BEFEF00CDD48D /* AppDelegate.swift in Sources */,
 				849AF9C81F7D3AE1000DB184 /* SWRevealViewController.m in Sources */,
 				849AF9CE1F7D44D7000DB184 /* Constants.swift in Sources */,
