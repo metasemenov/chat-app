@@ -44,6 +44,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keK-Rr-3Fw" userLabel="mainBg">
+                                <rect key="frame" x="0.0" y="77" width="375" height="590"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-Xy-2Nd">
+                                        <rect key="frame" x="0.0" y="550" width="375" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sI1-FQ-WLD"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inK-9K-NkN">
+                                        <rect key="frame" x="333" y="555" width="30" height="30"/>
+                                        <state key="normal" image="send"/>
+                                        <connections>
+                                            <action selector="sendMessagePressed:" destination="HhD-QK-mdb" eventType="touchUpInside" id="epr-Vs-VEk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BFE-Xy-2Nd" secondAttribute="trailing" id="3iH-1V-t77"/>
+                                    <constraint firstItem="inK-9K-NkN" firstAttribute="centerY" secondItem="BFE-Xy-2Nd" secondAttribute="centerY" id="8PT-xf-uGd"/>
+                                    <constraint firstAttribute="bottom" secondItem="BFE-Xy-2Nd" secondAttribute="bottom" id="TWK-56-jo3"/>
+                                    <constraint firstItem="BFE-Xy-2Nd" firstAttribute="leading" secondItem="keK-Rr-3Fw" secondAttribute="leading" id="W1j-KG-Z1x"/>
+                                    <constraint firstAttribute="trailing" secondItem="inK-9K-NkN" secondAttribute="trailing" constant="12" id="zwv-X1-rfb"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqn-og-Tug" customClass="GradientView" customModule="chat_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
@@ -76,12 +105,19 @@
                         <constraints>
                             <constraint firstItem="vqn-og-Tug" firstAttribute="trailing" secondItem="pbg-WJ-mJw" secondAttribute="trailing" id="5iq-dz-Rgz"/>
                             <constraint firstItem="vqn-og-Tug" firstAttribute="top" secondItem="k16-RZ-sx7" secondAttribute="top" id="9WO-nd-QY3"/>
+                            <constraint firstItem="keK-Rr-3Fw" firstAttribute="bottom" secondItem="pbg-WJ-mJw" secondAttribute="bottom" id="BU8-8N-m7Y"/>
                             <constraint firstItem="vqn-og-Tug" firstAttribute="leading" secondItem="pbg-WJ-mJw" secondAttribute="leading" id="BW2-pb-uDW"/>
+                            <constraint firstItem="keK-Rr-3Fw" firstAttribute="leading" secondItem="pbg-WJ-mJw" secondAttribute="leading" id="Bvd-vG-RCk"/>
+                            <constraint firstItem="keK-Rr-3Fw" firstAttribute="top" secondItem="vqn-og-Tug" secondAttribute="bottom" id="QCm-He-blR"/>
+                            <constraint firstItem="keK-Rr-3Fw" firstAttribute="trailing" secondItem="pbg-WJ-mJw" secondAttribute="trailing" id="v7F-DK-Gia"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pbg-WJ-mJw"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="1cv-mP-Kf6" id="DY0-W3-TZg"/>
+                        <outlet property="mainBg" destination="keK-Rr-3Fw" id="eow-GV-eeH"/>
                         <outlet property="menuBtn" destination="UaF-ta-kIX" id="WJV-JN-nHp"/>
+                        <outlet property="messageTxtField" destination="BFE-Xy-2Nd" id="cCW-G7-Kjq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9X-vb-ZfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,7 +165,7 @@
                                 <rect key="frame" x="0.0" y="131.5" width="375" height="420.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1pe-RZ-fjC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="1pe-RZ-fjC" customClass="ChannelCell" customModule="chat_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1pe-RZ-fjC" id="EfW-R4-5qA">
@@ -149,12 +185,18 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelNameLbl" destination="Mnd-AL-Urv" id="pob-XZ-KaV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhJ-vv-Gth">
                                 <rect key="frame" x="281" y="89.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="xGE-ai-ek5" eventType="touchUpInside" id="uic-jJ-aNT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,6 +220,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="DhT-jI-cqD" id="rXO-lh-lts"/>
+                        <outlet property="tableView" destination="iCA-fP-HoO" id="1as-7O-JP5"/>
                         <outlet property="userImg" destination="TXR-2v-roG" id="3qf-qv-XNS"/>
                         <segue destination="2v5-dH-CQD" kind="show" identifier="LoginVC" id="PrV-Qv-e06"/>
                     </connections>
@@ -587,6 +630,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
